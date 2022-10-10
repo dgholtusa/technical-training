@@ -3,7 +3,8 @@
     "version": "16.0",  # Version
     "application": True,  # This line says the module is an App, and not a module
     "depends": ["base"],  # dependencies
-    "data": ["security/ir.model.access"
+    "data": ["security/ir.model.access",
+        "views/estate_property_views.xml"
 
     ],
     "installable": True,

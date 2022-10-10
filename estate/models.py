@@ -27,4 +27,8 @@ class EstateProperty(models.Model):
            help='Make your selection'
         )
 
-
+<record id="estate_model_action" model="ir.actions.act_window">
+    <field name="name">Test action</field>
+        <field name="res_model">test.model</field>
+            <field name="view_mode">tree,form</field>
+            </record>
