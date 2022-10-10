@@ -12,7 +12,7 @@ class EstateProperty(models.Model):
         name = fields.Char()
         description = fields.Char()
         postcode = fields.Char()
-        date_availability = fields.Date(copy=False,default=fields.Date.today())
+        date_availability = fields.Date(copy=False,default=fields.Date.add(fields.Date.today(), months=3))
         expected_price = fields.Float()
         selling_price = fields.Float(copy=False,readonly=True)
         bedrooms = fields.Integer(default=2)
@@ -24,5 +24,5 @@ class EstateProperty(models.Model):
         garden_orientation = fields.Selection(
            string='Type',
            selection=[('north', 'North'), ('south', 'South'), ('east', 'East'), ('west', 'West')],
-           help='Make your selection'
-        )
+           help='Make your selection')
+        active = fields.Boolean()
