@@ -27,5 +27,8 @@ class EstateProperty(models.Model):
            help='Make your selection')
         active = fields.Boolean(default=False)
         state = fields.Selection(
-                string='Type',
-                selection=[('new', 'New'),('offer', 'Offer'), ('received', 'Received'), ('offer', 'Offer'), ('accepted', 'Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')],copy=False,required=True,default='new')
+                string='State',
+                selection=[('new', 'New'),('offer', 'Offer'), ('received', 'Received'), ('offer', 'Offer'), ('accepted', 'Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')],
+                copy=False,
+                required=True,
+                default='new')
