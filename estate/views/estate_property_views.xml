@@ -17,6 +17,7 @@
 		<field name="expected_price"/>
 	 	<field name="date_availability"/>
 	 	<field name="selling_price"/>
+		<field name="property_type_id"/>
 	  </tree>
 	</field>
 </record>
@@ -30,6 +31,7 @@
               <field name="name" class="mb16"/>
           </h1>  
           <group>
+            <field name= "property_type_id"/>
             <field name= "postcode"/>
             <field name="expected_price"/>
          <field name="date_availability"/>
