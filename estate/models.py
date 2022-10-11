@@ -32,3 +32,4 @@ class EstateProperty(models.Model):
                 copy=False,
                 required=True,
                 default='new')
+        property_type_id = fields.Char()
